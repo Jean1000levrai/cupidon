@@ -1,0 +1,26 @@
+___________from jean to isidore___________
+---------during week end--------------
+- rearranged the code
+- added 8 pictures for monde2 (img/decor/monde2/...)
+- created 2 new functions (doesn't work yet) : "monde1" and "monde2" to load the different worlds
+
+------------- june 3rd-------------
+- added a new boss "frost" that works with 11 functions line 712 to 903:
+    - BUG!!!! : - it cant die yet 
+                - its health bar doesnt appear
+                - dunno why tho but too lazy to do it now
+- added a new world "monde2" (a kind of frozen area)to the game currently inaccessible to the player: (function "monde1" and "monde2")
+    - switch side works
+    - the mobs are still there
+    - calls the boss "frost" when score is greater than 10
+- global variable : 
+    - monde = 1 # 1 or 2
+    - boss_frost = []
+    - frost_hp = 4
+- lists for images :
+    - img_boss_frost = [[],[]] 
+    - img_frost_health = []
+    - img_bg_monde2 = [[],[]]
+        # to do every different images
+        list[0].extend(charger_image('path', nb of images to load, (tuple for the size)))
+        
